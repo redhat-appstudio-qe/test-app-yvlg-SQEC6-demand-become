@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-4bzl
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-ijsa-tenant/test-app-yvlg/devfile-sample-python-basic-4bzl@sha256:393a0078bcc5feb4cc1ba4da06cf70fa8d935f981de7d5b07246fde9ef93cfee
+        name: my-python
+        resources: {}
+status: {}
